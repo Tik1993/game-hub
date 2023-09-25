@@ -34,7 +34,7 @@ const useGames = () =>{
         .get<FetchGamesResponse>("/games", {signal:controller.signal})
         .then((res) => {
           setGames(res.data.results);
-          console.log(res.data.results);
+          console.log("game",res.data.results);
           setLoading(false) ;
         })
         .catch((err) => {
