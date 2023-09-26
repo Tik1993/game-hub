@@ -53,7 +53,7 @@ function App() {
             <HStack spacing={5} marginBottom={5}>
               <PlatformSelector
                 selectedPlatform={gameQuery.platform}
-                onSelectedPlatform={(platform) =>
+                onSelectPlatform={(platform) =>
                   setGameQuery({ ...gameQuery, platform })
                 }
               />
